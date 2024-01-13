@@ -46,15 +46,11 @@ nav ul li a{
     text-align: center;
     font-family: Work Sans;
     font-size: 50px;
-    padding-bottom: 0;
+  
 }
-.architect-description{
-    color: var(--Dark-03, #727272);
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 16px;
-    padding-top: 5px;
-}
+
+    
+
 .group-img{
     width: 100%;
     padding-top: 30px;
@@ -69,4 +65,75 @@ nav ul li a{
     background: #FF900E;
     padding: 20px 25px;
     border: 0;
+}
+main{
+    max-width: 1400px;
+    margin: 80px auto;
+}
+/* team feature */
+.team-feature{
+    display: flex;
+    align-items: center;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+}
+.text{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.feature-title{
+    font-family: Work Sans;
+    font-size: 45px;
+}
+
+.quick-list{
+    color: #727272;
+}
+.of-our{
+     color: #131313;
+}
+.feature-color{
+    color: #FF900E;
+}
+.text-description{
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 20px;
+}
+/* some fact */
+.facts-title{
+    color: var(--Dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 45px;
+    margin-bottom: 20px;
+
+}
+.fact-box{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.box{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 50px;
+}
+.fact-title{
+    color: var(--Dark-02, #424242);
+    font-family: Work Sans;
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.fact-name{
+    color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size: 20px;
+    margin-top: 5px;
+    
 }
