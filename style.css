@@ -104,6 +104,61 @@ main{
     font-family: Work Sans;
     font-size: 20px;
 }
+/* experience feature */
+.experience-feature{
+    display: flex;
+    gap: 130px;
+    margin-top: 50px;
+}
+.exp-title{
+    border-left: 3px solid #FF900E;
+    padding-left: 20px;
+    color: var(--Dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 45px;
+}
+.card{
+    padding: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.title-text{
+    color: var(--Dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.card, .text-description{
+    margin: 10px 0;
+}
+.exp-img img{
+    height: 80%;
+    margin-left: 30px;
+}
+.exp-years{
+    width: 342px;
+    background: #FF900E;
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    padding: 40px 30px;
+    position: relative;
+    bottom: 100px;
+}
+.exp-years h2{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 45px;
+    margin: 0;
+}
+.exp-years p{
+    font-family: Work Sans;
+    font-size: 25px;
+    margin: 0;
+}
+
+
 /* some fact */
 .facts-title{
     color: var(--Dark-01, #131313);
@@ -153,10 +208,81 @@ main{
 
 footer{
     max-width: 1400px;
-    height: 100px;
+    height: 80px;
     margin: 60px auto 0;
     background-color: #FFF4E7;
     border-radius: 5px;
     text-align: center;
-    padding: 20px 0;
+    padding-top: 15px;
+}
+
+
+
+/* responsive for small device */
+
+@media screen and (max-width:576px){
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 20px;
+    }
+    .images{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+   
+    .fact-box{
+        flex-direction: column;
+    }
+    .box{
+        padding: 10px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .experience-feature{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .exp-img img{
+        width: 100%;
+        margin: 0;
+    }
+    .exp-years{
+        width: 180px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .sponsors-img{
+        flex-direction: column;
+    }
+    
+    .team-feature{
+        flex-direction: column;
+    }
+    .feature-title{
+        font-size: 25px;
+    }
+    footer{
+        padding: 5px;
+    }
+}
+/* responsive for medium device */
+@media screen and (min-width:576px) and (max-width:1180px) {
+      header{
+        padding: 20px 50px;
+      }
+
+    .team-feature{
+        flex-direction: column;
+    }  
+    .sponsors-img{
+        flex-direction: column;
+    }  
+    .experience-feature{
+        flex-direction: column;
+        gap:30px;
+    }
 }
